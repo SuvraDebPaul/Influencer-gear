@@ -4,8 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Influencer Gear</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Desktop First Design using Tailwind CSS Framework-->
+    <header class="header">
+      <div class="header__container w-4/5 mx-auto">
+        <div class="top-header flex justify-between items-center my-10">
+          <!-- <div class="hamberger">
+            <iconify-icon
+              icon="charm:menu-hamburger"
+              width="24"
+              height="24"
+            ></iconify-icon>
+          </div> -->
+          <div class="logo">
+            <h2 class="text-3xl">Influencer products</h2>
+          </div>
+          <div class="navigation w-1/3">
+            <nav class="nav list-none flex justify-between items-center">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Log In</a></li>
+              <li>
+                <iconify-icon
+                  icon="material-symbols:search-rounded"
+                  width="24"
+                  height="24"
+                ></iconify-icon>
+              </li>
+              <li>
+                <iconify-icon
+                  icon="mdi:cart"
+                  width="24"
+                  height="24"
+                ></iconify-icon>
+              </li>
+            </nav>
+          </div>
+        </div>
+        <div class="header__content">
+          <div class="image">
+            <img
+              class="w-4/5"
+              src="assets/images/main-camera.png"
+              alt="Main Camera"
+            />
+          </div>
+          <div class="content text-center">
+            <h1 class="text-3xl font-bold my-4">
+              Start your Journey as Influencer
+            </h1>
+            <p class="text-sm mx-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+              vestibulum sed scelerisque eros. Lectus faucibus.
+            </p>
+            <button class="btn bg-purple-800 text-white px-4 py-2 rounded my-4">
+              prebook Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
