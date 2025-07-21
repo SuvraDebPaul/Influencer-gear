@@ -10,3 +10,12 @@ body {
   background-color: #ffffff;
   font-family: var(--popins);
 }
+
+.banner-image {
+  width: 80%;
+  height: 90%;
+  background-image: url("../assets/images/Circle\ design.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
