@@ -9,12 +9,13 @@
   </head>
   <body>
     <!-- Desktop First Design using Tailwind CSS Framework-->
-    <header class="h-screen w-10/12 mx-auto m-4">
+    <header class="md:h-screen w-10/12 mx-auto m-4">
       <section
-        class="top-header grid grid-cols-2 items-center justify-around gap-4 h-10"
+        class="top-header flex justify-between lg:grid lg:grid-cols-2 lg:items-center lg:justify-around lg:gap-4 h-10"
       >
-        <h1 class="text-2xl font-bold">Influencer Products</h1>
-        <nav class="top-nav">
+        <ion-icon class="w-6 h-6 lg:hidden" name="menu-outline"></ion-icon>
+        <h1 class="text-lg md:text-2xl font-bold">Influencer Products</h1>
+        <nav class="top-nav hidden lg:block">
           <ul
             class="flex justify-end items-center space-x-4 h-full font-semibold"
           >
@@ -30,13 +31,20 @@
             </li>
           </ul>
         </nav>
+        <ion-icon class="w-6 h-6 lg:hidden" name="cart-outline"></ion-icon>
       </section>
-      <section class="banner flex items-center justify-between mt-20">
-        <div class="banner-content basis-7/12">
-          <h2 class="text-6xl font-bold text-pretty">
+      <section
+        class="banner flex flex-col md:flex-row items-center justify-between mt-20"
+      >
+        <div
+          class="banner-content mt-4 md:mt-0 text-center md:text-left basis-7/12 order-1 md:order-0"
+        >
+          <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold text-pretty">
             Start your Journey as Influencer
           </h2>
-          <p class="font-semibold text-lg my-4 text-balance">
+          <p
+            class="font-semibold text-sm md:text-md lg:text-lg my-4 text-balance text-gray-700"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
             vestibulum sed scelerisque eros. Lectus faucibus.
           </p>
@@ -49,9 +57,9 @@
             ></span> -->
           </button>
         </div>
-        <div class="banner-image basis-5/12">
+        <div class="banner-image basis-5/12 order-0 md:order-1">
           <img
-            class="w-full h-fit"
+            class="w-3/4 h-fit mx-auto md:w-full md:h-fit"
             src="assets/images/main-camera.png"
             alt=""
           />
@@ -96,8 +104,68 @@
             </p>
           </div>
           <div class="card bg-white p-4 rounded-lg shadow-md">
-            <img class="mb-4" src="assets/images/tripod.png" alt="Tripod" />
-            <h4 class="text-3xl font-semibold">Flex Tripod</h4>
+            <img class="mb-4" src="assets/images/mic.png" alt="Tripod" />
+            <h4 class="text-3xl font-semibold">Microphone</h4>
+            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span>120.25</h6>
+            <div class="star flex items-center mb-2.5">
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon
+                class="text-amber-600"
+                name="star-half-outline"
+              ></ion-icon>
+              <p class="ml-2.5 text-xs">4.99</p>
+            </div>
+            <p class="text-pretty text-xs text-gray-500 mb-2.5">
+              Wordwide shifting available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+          <div class="card bg-white p-4 rounded-lg shadow-md">
+            <img class="mb-4" src="assets/images/airpod.png" alt="Tripod" />
+            <h4 class="text-3xl font-semibold">Airbuds</h4>
+            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span>100.00</h6>
+            <div class="star flex items-center mb-2.5">
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon
+                class="text-amber-600"
+                name="star-half-outline"
+              ></ion-icon>
+              <p class="ml-2.5 text-xs">4.99</p>
+            </div>
+            <p class="text-pretty text-xs text-gray-500 mb-2.5">
+              Wordwide shifting available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+          <div class="card bg-white p-4 rounded-lg shadow-md">
+            <img class="mb-4" src="assets/images/drone.png" alt="Tripod" />
+            <h4 class="text-3xl font-semibold">Drone</h4>
+            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span>980.25</h6>
+            <div class="star flex items-center mb-2.5">
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
+              <ion-icon
+                class="text-amber-600"
+                name="star-half-outline"
+              ></ion-icon>
+              <p class="ml-2.5 text-xs">4.99</p>
+            </div>
+            <p class="text-pretty text-xs text-gray-500 mb-2.5">
+              Wordwide shifting available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+          <div class="card bg-white p-4 rounded-lg shadow-md">
+            <img class="mb-4" src="assets/images/lights.png" alt="Tripod" />
+            <h4 class="text-3xl font-semibold">Light Setup</h4>
             <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span> 50.48</h6>
             <div class="star flex items-center mb-2.5">
               <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
@@ -116,69 +184,9 @@
             </p>
           </div>
           <div class="card bg-white p-4 rounded-lg shadow-md">
-            <img class="mb-4" src="assets/images/tripod.png" alt="Tripod" />
-            <h4 class="text-3xl font-semibold">Flex Tripod</h4>
-            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span> 50.48</h6>
-            <div class="star flex items-center mb-2.5">
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon
-                class="text-amber-600"
-                name="star-half-outline"
-              ></ion-icon>
-              <p class="ml-2.5 text-xs">4.99</p>
-            </div>
-            <p class="text-pretty text-xs text-gray-500 mb-2.5">
-              Wordwide shifting available <br />
-              Buyers protection possible!
-            </p>
-          </div>
-          <div class="card bg-white p-4 rounded-lg shadow-md">
-            <img class="mb-4" src="assets/images/tripod.png" alt="Tripod" />
-            <h4 class="text-3xl font-semibold">Flex Tripod</h4>
-            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span> 50.48</h6>
-            <div class="star flex items-center mb-2.5">
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon
-                class="text-amber-600"
-                name="star-half-outline"
-              ></ion-icon>
-              <p class="ml-2.5 text-xs">4.99</p>
-            </div>
-            <p class="text-pretty text-xs text-gray-500 mb-2.5">
-              Wordwide shifting available <br />
-              Buyers protection possible!
-            </p>
-          </div>
-          <div class="card bg-white p-4 rounded-lg shadow-md">
-            <img class="mb-4" src="assets/images/tripod.png" alt="Tripod" />
-            <h4 class="text-3xl font-semibold">Flex Tripod</h4>
-            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span> 50.48</h6>
-            <div class="star flex items-center mb-2.5">
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
-              <ion-icon
-                class="text-amber-600"
-                name="star-half-outline"
-              ></ion-icon>
-              <p class="ml-2.5 text-xs">4.99</p>
-            </div>
-            <p class="text-pretty text-xs text-gray-500 mb-2.5">
-              Wordwide shifting available <br />
-              Buyers protection possible!
-            </p>
-          </div>
-          <div class="card bg-white p-4 rounded-lg shadow-md">
-            <img class="mb-4" src="assets/images/tripod.png" alt="Tripod" />
-            <h4 class="text-3xl font-semibold">Flex Tripod</h4>
-            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span> 50.48</h6>
+            <img class="mb-4" src="assets/images/setup.png" alt="Tripod" />
+            <h4 class="text-3xl font-semibold">Photoshoot set</h4>
+            <h6 class="my-2.5 text-2xl text-gray-900"><span>$</span>820.40</h6>
             <div class="star flex items-center mb-2.5">
               <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
               <ion-icon class="text-amber-600" name="star-outline"></ion-icon>
